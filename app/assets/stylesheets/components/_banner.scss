@@ -1,0 +1,66 @@
+.app {
+  display: flex;
+}
+.block-left {
+  width: 50%;
+  height: 100vh;
+  background-color: $green;
+}
+
+.block-right {
+  width: 50%;
+  height: 100vh;
+  background-color: $gray;
+}
+
+.banner-txt {
+  font-family: $gilroy;
+  font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 10px;
+  line-height: 100%;
+  width: 270px;
+  height: 260px;
+  margin-top: -130px;
+  margin-left: -135px;
+}
+
+.dot {
+  color: $green;
+}
+
+.alt-lang {
+  font-size: 18px;
+  height: 20px;
+  line-height: 80%;
+  margin-left: 6px;
+}
+
+@media(min-width: 768px) {
+  .block-left  {
+    margin: 30px 0 30px 30px;
+    height: calc(100vh - 60px);
+  }
+  .block-right {
+    margin: 30px 30px 30px 0px;
+    height: calc(100vh - 60px);
+  }
+  .banner-txt {
+    font-size: 140px;
+    width: 308px;
+    height: 260px;
+    margin-top: -130px;
+    margin-left: -159px;
+  }
+  .alt-lang {
+    font-size: 28px;
+    margin-left: 8px;
+  }
+}
+
+
+
+
+
