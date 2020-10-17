@@ -1,2 +1,61 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="page-container">
+  <div class="app d-flex">
+    <div class="block-left"></div>
+    <div class="block-right"></div>
+  </div>
+  <div class="header">
+    <div class="logo">MARIELLE DE JONG
+    </div>
+    <div class="menu-circle">
+    </div>
+    <div class="hamburger hamburger--elastic">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+    </div>
+    <div class="menu-txt">
+      <span class="menu-letter">U</span>
+      <span class="menu-letter">N</span>
+      <span class="menu-letter">E</span>
+      <span class="menu-letter">M</span>
+    </div>
+    <code>hamburger--elastic</code>
+    <div class="banner-txt">
+      <span>HE</span>
+      <span>LLO</span><span class="dot">.</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <script>
+  /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+  </script>
+
+
+

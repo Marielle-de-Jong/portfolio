@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module PortfolioWebsite
   class Application < Rails::Application
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
     config.generators do |generate|
       generate.assets false
       generate.helper false
